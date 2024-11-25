@@ -147,7 +147,7 @@ const Topbar = () => {
               <FiChevronDown className="text-black text-lg" />
             </div>
 
-            {/* Dropdown Modal */}
+            {/* Profile Dropdown Modal */}
             {isProfileOpen && (
               walletConnected ? (
                 <div className="absolute right-0 mt-2 w-72 bg-white rounded-lg shadow-lg py-2 text-black">

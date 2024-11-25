@@ -8,7 +8,7 @@ const CampaignCard = () => {
       style={{
         background: "linear-gradient(184.93deg, #624225 3.51%, #4C2D17 96.03%)",
         borderRadius: "36px 16px 36px 16px", // Asymmetric border radius
-        transform: "rotate(1deg)", // Slight rotation for extra effect
+        transform: "rotate(1deg)",
       }}
     >
       <div
