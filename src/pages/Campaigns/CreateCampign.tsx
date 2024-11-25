@@ -45,10 +45,10 @@ export const CreateCampign = () => {
 
           {/* Target */}
           <div className="flex flex-col gap-2">
-            <label className="text-white text-sm">Target</label>
+            <label className="text-white text-sm">Owner</label>
             <input
               type="text"
-              placeholder="My Address"
+              placeholder="eg. johnfrans"
               className="bg-transparent border border-white/60 rounded-2xl p-3 text-white focus:outline-none focus:border-white"
             />
           </div>
@@ -58,20 +58,20 @@ export const CreateCampign = () => {
             <label className="text-white text-sm">Campaign Manager</label>
             <input
               type="text"
-              placeholder="My Address"
+              placeholder="eg. john greesham"
               className="bg-transparent border border-white/60 rounded-2xl p-3 text-white focus:outline-none focus:border-white"
             />
           </div>
 
           {/* Values Section */}
           <div className="flex flex-col gap-2">
-            <label className="text-white text-sm">Values</label>
+            <label className="text-white text-sm">Tokens</label>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
               {/* First Row */}
               <div className="relative">
                 <input
                   type="text"
-                  placeholder="Value"
+                  placeholder="Price"
                   className="w-full bg-transparent border border-white/60 rounded-2xl p-3 text-white focus:outline-none focus:border-white"
                 />
                 <div className="absolute right-3 top-1/2 -translate-y-1/2 text-white/40">
@@ -85,14 +85,14 @@ export const CreateCampign = () => {
               />
               <input
                 type="text"
-                placeholder="Total Price"
+                placeholder="Description"
                     className="w-full bg-transparent border border-white/60 rounded-2xl p-3 text-white focus:outline-none focus:border-white"
               />
 
               {/* Second Row */}
               <input
                 type="text"
-                placeholder="Value"
+                placeholder="Price"
                 className="w-full bg-transparent border border-white/60 rounded-2xl p-3 text-white focus:outline-none focus:border-white"
               />
               <input
@@ -102,7 +102,7 @@ export const CreateCampign = () => {
               />
               <input
                 type="text"
-                placeholder="Total Price"
+                placeholder="Description"
                 className="w-full bg-transparent border border-white/60 rounded-2xl p-3 text-white focus:outline-none focus:border-white"
               />
             </div>

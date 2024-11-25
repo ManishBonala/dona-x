@@ -1,6 +1,20 @@
+import { CircularBlur } from "../../components/CircularBlur"
+
 export const ContactUsForm = () => {
   return (
+    <div className="relative flex justify-center items-center w-full">
+        <div className="absolute top-16 -right-[0rem]">
+          <CircularBlur direction="right"/>
+     </div>
+
+     <div className="absolute bottom-16 -left-[0rem]">
+
+     <CircularBlur direction="left"/>
+     </div>
+
     <div className="flex flex-col items-center w-full max-w-3xl mx-auto px-4 py-16">
+    
+
       {/* Header */}
       <div className="text-center mb-8">
         <h2 className="text-white text-4xl font-bold mb-4 font-primary">Get in touch</h2>
@@ -51,6 +65,7 @@ export const ContactUsForm = () => {
           Get Started
         </button>
       </form>
+    </div>
     </div>
   )
 }

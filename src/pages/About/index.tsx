@@ -1,17 +1,15 @@
 import React from "react";
+import HeroContainer from "../../components/HeroContainer";
 const About = () => {
   return (
-    <div className="text-white bg-black min-h-screen flex items-center justify-center">
-      <div className="transtion group flex items-center justify-center rounded-full bg-[linear-gradient(to_right,#ffffff_50%,#000000_60%)] w-1/2 h-72 text-white p-1 transparent">
-        <div 
-        className="h-full w-full"
-        
-        style={{
-          background:
-            "linear-gradient(90.65deg, #764725 0.88%, rgba(42, 22, 10, 0) 99.47%)"
-        }}>
-          Click me
-        </div>
+    <div className='h-full bg-[#100805] flex flex-col items-center justify-center w-full relative font-primary'>
+      <HeroContainer />
+
+      <div className="text-white text-center text-4xl font-bold my-24">
+        We are Dona-X <br />
+        <span className="text-[#ECA14B]">
+          A Platform for Donating to Charity
+        </span>
       </div>
     </div>
   );

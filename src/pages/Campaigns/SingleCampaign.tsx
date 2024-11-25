@@ -1,7 +1,7 @@
 import React from 'react'
 import HeroContainer from '../../components/HeroContainer'
 import { ContactUsForm } from '../Contact/ContactUsForm'
-import bitCoinImg from '../../assets/Images/bitCoinImage.png';
+import bitCoinImg from '../../assets/Images/bitcoinImage.png';
 
 const MainCampignCard = () => {
   return (

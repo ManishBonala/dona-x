@@ -1,17 +1,14 @@
 interface CircularBlurProps {
-  direction: 'left' | 'right';
+  direction: "left" | "right";
 }
 
 export const CircularBlur: React.FC<CircularBlurProps> = ({ direction }) => {
-  const positionStyle = {
-    position: 'absolute',
-    width: '1000px',
-    height: '1000px',
-    background: 'rgba(55, 42, 25, 1)',
-    borderRadius: '50%',
-    filter: 'blur(600px)',
-    zIndex: 1000,
-  } as const;
-
-  return <div style={positionStyle} />;
+  return (
+    <div
+      className={`blur-div text-white absolute top-1/2 -translate-y-1/2 
+        ${direction === "left" ? "-left-[17.5rem]" : "-right-[17.5rem]"}
+        
+        w-[35rem] h-[35rem] bg-[#372A19] blur-[150px] rounded-full z-50`}
+    ></div>
+  );
 };

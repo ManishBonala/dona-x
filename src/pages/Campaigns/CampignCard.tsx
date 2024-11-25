@@ -4,11 +4,11 @@ const CampaignCard = () => {
   return (
     <div
       onClick={() => navigate('/home/campaigns/single')}
-      className="relative flex w-[20%] h-[16rem] p-1 shadow-2xl cursor-pointer"
+      className="relative flex w-[20%] h-[20rem] p-1 shadow-2xl cursor-pointer"
       style={{
         background: "linear-gradient(184.93deg, #624225 3.51%, #4C2D17 96.03%)",
         borderRadius: "36px 16px 36px 16px", // Asymmetric border radius
-        transform: "rotate(2deg)", // Slight rotation for extra effect
+        transform: "rotate(1deg)", // Slight rotation for extra effect
       }}
     >
       <div
@@ -18,7 +18,12 @@ const CampaignCard = () => {
           borderRadius: "30px 6px 30px 6px",
         }}
       >
-        <div className="absolute w-36 h-36 rounded-full bg-white -top-16 left-1/2 -translate-x-1/2"></div>
+        <div className="absolute w-36 h-36 rounded-full bg-white -top-16 left-1/2 -translate-x-1/2 text-center flex items-center justify-center">
+        campaign image
+        </div>
+        <div className="flex items-center mt-24 ml-24">
+          <p className="text-white/80 font-secondary text-sm">Campaign Details</p>
+        </div>
 
         <button
           className="w-fit px-8 py-3 rounded-full flex items-center gap-2 text-white mt-12 absolute -bottom-4 left-1/2 -translate-x-1/2"

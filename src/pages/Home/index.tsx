@@ -39,7 +39,11 @@ const RecentCampaigns = () => {
 
 const HowItWorks = () => {
   return (
-    <div className="flex flex-col justify-center items-center w-full gap-4 mt-24">
+    <div className="flex flex-col justify-center items-center w-full gap-4 mt-24 relative">
+     <CircularBlur direction="left"/>
+     <div className="absolute top-[20rem] -right-[0rem]">
+     <CircularBlur direction="right"/>
+     </div>
       <h1 className="text-5xl font-primary font-bold text-white text-center w-1/4">
         How it works!
       </h1>
@@ -119,7 +123,8 @@ const HowItWorks = () => {
 
 const Gallery = () => {
   return (
-    <div className="flex flex-col justify-center items-center w-full gap-8 mt-24 px-8">
+    <div className="flex flex-col justify-center items-center w-full gap-8 mt-24 px-8 relative">
+      <CircularBlur direction="left"/>
       <div className="flex flex-col justify-center items-center w-full gap-4">
         <h1 className="text-4xl font-bold text-white text-center w-full md:w-1/3 font-primary">
           Lorem ipsum dolor sit amet consectetur.
@@ -160,7 +165,7 @@ const Gallery = () => {
 
 const Home = () => {
   return (
-    <div className="relative bg-[#100805]">
+    <div className="relative bg-[#100805] h-full">
       <HeroContainer />
       <RecentCampaigns />
       <HowItWorks />
